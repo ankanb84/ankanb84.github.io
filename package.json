@@ -1,0 +1,40 @@
+{
+  "name": "ankan-biswas-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing skills, projects, and achievements",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "start:node": "npx http-server",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Portfolio website is ready to deploy!'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "web-development",
+    "computer-science",
+    "cyber-security",
+    "machine-learning",
+    "deep-learning"
+  ],
+  "author": "Ankan Biswas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankanb84/portfolio.git"
+  },
+  "homepage": "https://ankanb84.github.io",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
+
