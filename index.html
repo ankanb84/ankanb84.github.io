@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Floating Navigation (appears on scroll) -->
+    <nav class="navbar floating-nav" id="floatingNav">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">AB</a>
@@ -40,29 +40,45 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Terminal Introduction -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Ankan Biswas</span></h1>
-                <h2 class="hero-subtitle">Computer Science Engineer & ML Enthusiast</h2>
+                <div class="hero-intro-text">
+                    <span class="intro-label">&lt;developer&gt;</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Ankan Biswas</span></h1>
+                    <span class="intro-label">&lt;/developer&gt;</span>
+                </div>
+                <h2 class="hero-subtitle">
+                    <span class="code-tag">&lt;role&gt;</span>
+                    Computer Science Engineer & ML Enthusiast
+                    <span class="code-tag">&lt;/role&gt;</span>
+                </h2>
                 <p class="hero-description">
                     Passionate about Machine Learning, Deep Learning, and Cybersecurity. 
                     Currently pursuing B.Tech CSE with specialization in Cyber Security at UEM Jaipur.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-terminal"></i> Get In Touch
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <i class="fas fa-user-shield"></i>
                     </div>
                     <h3>Ankan Biswas</h3>
                     <p>B.Tech CSE (4th Year)</p>
                     <p>Cyber Security Specialization</p>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span>Available for opportunities</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,11 +105,11 @@
                         <p>CGPA</p>
                     </div>
                     <div class="stat-item">
-                        <h3>4+</h3>
-                        <p>NPTEL Certifications</p>
+                        <h3>10+</h3>
+                        <p>Certifications</p>
                     </div>
                     <div class="stat-item">
-                        <h3>12+</h3>
+                        <h3>5+</h3>
                         <p>Major Projects</p>
                     </div>
                     <div class="stat-item">
@@ -149,6 +165,30 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Cybersecurity Intern</h3>
+                        <h4>Rajasthan Police Headquarters, Jaipur - Cyber Crime Department</h4>
+                        <p class="experience-period">October 2025 - Present</p>
+                        <p class="experience-details">
+                            Currently interning with the Rajasthan Police Cyber Crime Department, working on real-world cybersecurity challenges, 
+                            threat analysis, digital forensics, and assisting in cybercrime investigations. Gaining hands-on experience in 
+                            network security, malware analysis, and incident response protocols.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -170,7 +210,7 @@
                     <h3>Web Technologies</h3>
                     <div class="skill-items">
                         <span class="skill-tag">Django</span>
-                        <span class="skill-tag">React.js</span>
+                     
                         <span class="skill-tag">Web3.js</span>
                     </div>
                 </div>
@@ -178,7 +218,7 @@
                     <h3>Databases</h3>
                     <div class="skill-items">
                         <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQLite</span>
+                      
                     </div>
                 </div>
                 <div class="skill-category">
@@ -186,17 +226,15 @@
                     <div class="skill-items">
                         <span class="skill-tag">Machine Learning</span>
                         <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Computer Vision</span>
+                       
                         <span class="skill-tag">Speech Recognition</span>
-                        <span class="skill-tag">Natural Language Processing</span>
+                        
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Blockchain & Security</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Ethereum</span>
+                       
                         <span class="skill-tag">Smart Contracts</span>
                         <span class="skill-tag">Blockchain</span>
                         <span class="skill-tag">Cyber Security</span>
@@ -209,6 +247,7 @@
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
                         <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google colab</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -216,7 +255,7 @@
                     <div class="skill-items">
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Matplotlib</span>
+                       
                     </div>
                 </div>
                 <div class="skill-category">
@@ -225,6 +264,9 @@
                         <span class="skill-tag">Data Structures</span>
                         <span class="skill-tag">Algorithms</span>
                         <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Digital Forensics</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Operating System</span>
                     </div>
                 </div>
             </div>
@@ -261,8 +303,8 @@
                     <div class="project-header">
                         <h3>AI-based Desktop Voice Assistant</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ankanb84/ai-based-voice-assistant" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ankanb84/ai-based-voice-assistant" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
@@ -282,8 +324,8 @@
                     <div class="project-header">
                         <h3>Memory Sharing Platform (Blockchain-Based)</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ankanb84/memory-sharing-platform-using-blockchain" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ankanb84/memory-sharing-platform-using-blockchain" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
@@ -303,8 +345,8 @@
                     <div class="project-header">
                         <h3>General Disease Prediction Using ML</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ankanb84/general-disease-prediction-using-ml" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ankanb84/general-disease-prediction-using-ml" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
@@ -324,8 +366,8 @@
                     <div class="project-header">
                         <h3>Medical Image Enhancement Using Deep Learning</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ankanb84/medical-image-enhanchement-using-Deep-Learning" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ankanb84/medical-image-enhanchement-using-Deep-Learning" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
@@ -369,41 +411,51 @@
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                <a href="https://drive.google.com/file/d/1fBBo4b87DQpeoGHVvf9Ju851Zm05ijOd/view?usp=drive_link" target="_blank" class="cert-card-link">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Problem Solving Through Programming In C</h3>
+                        <p>NPTEL - IIT Kharagpur</p>
                     </div>
-                    <h3>Problem Solving Through Programming In C</h3>
-                    <p>NPTEL - IIT Kharagpur</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1cFchuM3QUkrRT4p_0pAEhmYT2fL8D57I/view?usp=drive_link" target="_blank" class="cert-card-link">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Python for Data Science</h3>
+                        <p>NPTEL - IIT Madras</p>
                     </div>
-                    <h3>Python for Data Science</h3>
-                    <p>NPTEL - IIT Madras</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1flvNa-rGW2OQAxX7l0jtTMDM0gob0kX_/view?usp=drive_link" target="_blank" class="cert-card-link">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>The Joy of Computing using Python</h3>
+                        <p>NPTEL - IIT Madras</p>
                     </div>
-                    <h3>The Joy of Computing using Python</h3>
-                    <p>NPTEL - IIT Madras</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1flvNa-rGW2OQAxX7l0jtTMDM0gob0kX_/view?usp=drive_link" target="_blank" class="cert-card-link">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Cybersecurity Analyst Job Simulation</h3>
+                        <p>Forage</p>
                     </div>
-                    <h3>Cybersecurity Analyst Job Simulation</h3>
-                    <p>Forage</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1lMlgovI7pZIgVIFykdEWl_-2vEtVU88o/view?usp=drive_link" target="_blank" class="cert-card-link">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Foundation of Cybersecurity</h3>
+                        <p>Google</p>
                     </div>
-                    <h3>Foundation of Cybersecurity</h3>
-                    <p>Google</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
