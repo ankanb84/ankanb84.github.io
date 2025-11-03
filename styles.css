@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #e7ffe7;
+    background-color: #0a0e27; /* cyber dark */
     overflow-x: hidden;
 }
 
@@ -28,11 +28,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 14, 39, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 255, 65, 0.3);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -48,14 +49,16 @@ body {
 .nav-logo a {
     font-size: 2rem;
     font-weight: 700;
-    color: #007bff;
+    color: #00ff41;
     text-decoration: none;
     transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 
 .nav-logo a:hover {
-    color: #0056b3;
+    color: #00ff88;
     transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.8);
 }
 
 .nav-menu {
@@ -65,7 +68,7 @@ body {
 }
 
 .nav-link {
-    color: #333;
+    color: #00ff41;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -73,7 +76,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #00ff88;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
 }
 
 .nav-link::after {
@@ -83,7 +87,8 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #007bff;
+    background-color: #00ff41;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.8);
     transition: width 0.3s ease;
 }
 
@@ -100,10 +105,11 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #00ff41;
     margin: 3px 0;
     transition: 0.3s;
     transform-origin: center;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -121,8 +127,9 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: radial-gradient(1200px 600px at 20% 20%, rgba(0,255,65,0.1), transparent 70%),
+                linear-gradient(135deg, #0d1225 0%, #0a0e27 100%);
+    color: #e7ffe7;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -175,8 +182,8 @@ body {
 }
 
 .highlight {
-    color: #ffd700;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    color: #00ff88;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
 }
 
 .hero-subtitle {
@@ -237,22 +244,22 @@ body {
 }
 
 .btn-primary {
-    background: #ffd700;
-    color: #333;
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    background: #00ff41;
+    color: #0a0e27;
+    box-shadow: 0 8px 25px rgba(0, 255, 65, 0.3);
 }
 
 .btn-primary:hover {
-    background: #ffed4e;
+    background: #00ff88;
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 255, 65, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border-color: white;
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    color: #e7ffe7;
+    border-color: #e7ffe7;
+    box-shadow: 0 8px 25px rgba(231, 255, 231, 0.2);
 }
 
 .btn-secondary:hover {
@@ -283,7 +290,7 @@ body {
     border-radius: 20px;
     padding: 3rem 2rem;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 65, 0.2);
     transition: all 0.5s ease;
     animation: gentleFloat 3s ease-in-out infinite;
 }
@@ -305,7 +312,7 @@ body {
 
 .profile-avatar {
     font-size: 5rem;
-    color: #ffd700;
+    color: #00ff88;
     margin-bottom: 1rem;
 }
 
@@ -329,7 +336,7 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #333;
+    color: #e7ffe7;
     position: relative;
     animation: titleSlideDown 1s ease-out;
 }
@@ -353,7 +360,7 @@ section {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #007bff, #ffd700);
+    background: linear-gradient(90deg, #00ff41, #00ff88);
     border-radius: 2px;
     animation: lineGrow 1.2s ease-out 0.5s both;
 }
@@ -371,7 +378,7 @@ section {
 
 /* About Section */
 .about {
-    background: white;
+    background: #0d1225;
     position: relative;
 }
 
@@ -382,7 +389,7 @@ section {
     left: 0;
     right: 0;
     height: 100px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgba(0,255,65,0.25) 0%, transparent 100%);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     transform: translateZ(-10px);
 }
@@ -412,20 +419,21 @@ section {
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     transform-style: preserve-3d;
 }
 
 .stat-item {
     text-align: center;
-    padding: 2rem;
-    background: #f8f9fa;
+    padding: 2.5rem 1.5rem;
+    background: #0a0e27;
     border-radius: 15px;
-    border: 2px solid #e9ecef;
+    border: 2px solid rgba(0,255,65,0.15);
     transition: all 0.5s ease;
     transform-style: preserve-3d;
     position: relative;
     overflow: hidden;
+    min-height: 140px;
 }
 
 .stat-item::before {
@@ -435,7 +443,7 @@ section {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.1), transparent);
     transition: left 0.5s;
 }
 
@@ -451,7 +459,7 @@ section {
 .stat-item h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #007bff;
+    color: #00ff88;
     margin-bottom: 0.5rem;
     animation: numberCount 2s ease-out;
 }
@@ -462,9 +470,11 @@ section {
 }
 
 .stat-item p {
-    color: #666;
+    color: #cfe9cf;
     font-weight: 500;
     transform: translateZ(10px);
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* Education Section */
@@ -745,7 +755,7 @@ section {
 
 /* Projects Section */
 .projects {
-    background: #f8f9fa;
+    background: #0d1225;
     position: relative;
 }
 
@@ -756,7 +766,7 @@ section {
     left: 0;
     right: 0;
     height: 100px;
-    background: white;
+    background: #0d1225;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
     transform: translateZ(-10px);
 }
@@ -773,8 +783,8 @@ section {
     background: white;
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e9ecef;
+    box-shadow: 0 5px 25px rgba(0, 255, 65, 0.08);
+    border: 2px solid rgba(0,255,65,0.15);
     transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
@@ -806,7 +816,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.05), transparent);
+    background: linear-gradient(135deg, rgba(0, 255, 65, 0.06), transparent);
     transform: scale(0);
     transition: transform 0.5s ease;
     border-radius: 15px;
@@ -830,7 +840,7 @@ section {
 }
 
 .project-header h3 {
-    color: #007bff;
+    color: #00ff88;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     flex: 1;
@@ -844,14 +854,14 @@ section {
 }
 
 .project-link {
-    color: #666;
+    color: #a6b3a6;
     font-size: 1.2rem;
     transition: all 0.3s ease;
     transform-style: preserve-3d;
 }
 
 .project-link:hover {
-    color: #007bff;
+    color: #00ff88;
     transform: scale(1.2) rotateY(15deg);
 }
 
@@ -888,9 +898,16 @@ section {
 
 /* Certifications Section */
 .certifications {
-    background: white;
+    background: #0d1225;
     position: relative;
     padding: 100px 0; /* make section a bit bigger */
+}
+
+/* Make entire certification card clickable */
+.cert-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .certifications::before {
@@ -900,7 +917,7 @@ section {
     left: 0;
     right: 0;
     height: 100px;
-    background: #f8f9fa;
+    background: #0d1225;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
     transform: translateZ(-10px);
 }
@@ -918,7 +935,7 @@ section {
     padding: 2.5rem;
     border-radius: 18px;
     text-align: center;
-    border: 2px solid #e9ecef;
+    border: 2px solid rgba(0,255,65,0.15);
     transition: all 0.5s ease;
     transform-style: preserve-3d;
     position: relative;
@@ -960,7 +977,7 @@ section {
 }
 
 .cert-card h3 {
-    color: #007bff;
+    color: #00ff88;
     margin-bottom: 0.6rem;
     font-size: 1.3rem; /* clearer and bigger */
     line-height: 1.4;
@@ -976,7 +993,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background: #f8f9fa;
+    background: #0d1225;
     position: relative;
 }
 
