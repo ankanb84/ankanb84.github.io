@@ -418,7 +418,7 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2.5rem;
     transform-style: preserve-3d;
 }
@@ -474,7 +474,8 @@ section {
     font-weight: 500;
     transform: translateZ(10px);
     word-wrap: break-word;
-    white-space: normal;
+    white-space: nowrap; /* keep on one line */
+    font-size: 1rem;
 }
 
 /* Education Section */
@@ -780,7 +781,7 @@ section {
 }
 
 .project-card {
-    background: white;
+    background: #0f1635; /* dark card */
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 5px 25px rgba(0, 255, 65, 0.08);
@@ -866,7 +867,7 @@ section {
 }
 
 .project-description {
-    color: #666;
+    color: #cfe9cf;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     transform: translateZ(10px);
@@ -1262,11 +1263,11 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: white;
+    background: #0a0e27; /* dark */
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e9ecef;
+    box-shadow: 0 5px 25px rgba(0, 255, 65, 0.08);
+    border: 2px solid rgba(0,255,65,0.15);
     transition: all 0.5s ease;
     transform-style: preserve-3d;
     position: relative;
@@ -1297,10 +1298,10 @@ section {
 
 .contact-icon {
     font-size: 2rem;
-    color: #007bff;
+    color: #00ff88;
     width: 60px;
     height: 60px;
-    background: #f8f9fa;
+    background: #0f1635;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1311,32 +1312,32 @@ section {
 
 .contact-item:hover .contact-icon {
     transform: scale(1.2) rotateY(180deg);
-    background: #007bff;
-    color: white;
+    background: #00ff41;
+    color: #0a0e27;
 }
 
 .contact-details h3 {
-    color: #333;
+    color: #e7ffe7;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     transform: translateZ(15px);
 }
 
 .contact-details p {
-    color: #666;
+    color: #cfe9cf;
     margin-bottom: 0;
     transform: translateZ(10px);
 }
 
 .contact-details a {
-    color: #007bff;
+    color: #00ff88;
     text-decoration: none;
     transition: all 0.3s ease;
     transform-style: preserve-3d;
 }
 
 .contact-details a:hover {
-    color: #0056b3;
+    color: #00ff41;
     transform: scale(1.05) translateZ(10px);
 }
 
