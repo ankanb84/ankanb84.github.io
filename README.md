@@ -202,7 +202,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **Email**: ankanb84@gmail.com
 - **GitHub**: [ankanb84](https://ankanb84.github.io)
-- **LinkedIn**: [ankanbiswas](https://linkedin.com/in/ankanbiswas)
+- **LinkedIn**: [ankanbiswas](https://www.linkedin.com/in/ankan-biswas-b8a948248/)
 
 ## 🎉 What's New in This Version
 
