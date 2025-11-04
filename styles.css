@@ -344,9 +344,26 @@ body {
 }
 
 .profile-avatar {
-    font-size: 5rem;
-    color: var(--accent-secondary);
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transition: all 0.5s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px var(--accent-glow);
+    border-color: var(--accent-secondary);
 }
 
 .profile-card h3 {
