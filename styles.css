@@ -470,14 +470,14 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
     gap: 2.5rem;
     transform-style: preserve-3d;
 }
 
 .stat-item {
     text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 2.2rem;
     background: var(--bg-card);
     border-radius: 15px;
     border: 2px solid var(--border-color);
@@ -486,7 +486,8 @@ section {
     position: relative;
     overflow: visible;
     min-height: 150px;
-    min-width: 220px;
+    min-width: 280px;
+    width: 100%;
 }
 
 .stat-item::before {
@@ -530,8 +531,9 @@ section {
     white-space: nowrap;
     font-size: 0.95rem;
     line-height: 1.4;
-    display: inline-block;
-    max-width: 100%;
+    display: block;
+    width: 100%;
+    overflow: visible;
 }
 
 /* Professional Experience Section */
