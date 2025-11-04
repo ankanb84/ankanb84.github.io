@@ -1223,6 +1223,31 @@ section {
     border-color: var(--border-hover);
 }
 
+.contact-form-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 15px;
+    border: 3px solid var(--border-color);
+    background: var(--bg-primary);
+    padding: 12px;
+    box-shadow: 0 5px 15px var(--shadow-glow);
+    transition: all 0.3s ease;
+}
+
+.contact-form-container:hover .form-logo {
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 25px var(--accent-glow);
+    transform: scale(1.05);
+}
+
 .contact-form-container h3 {
     text-align: center;
     color: var(--accent-secondary);
