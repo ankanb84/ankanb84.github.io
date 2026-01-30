@@ -462,43 +462,42 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    
- <form 
-  id="contactForm" 
-  class="contact-form" 
-  action="https://formspree.io/f/mjgrepal" 
-  method="POST"
->
-    <!-- Optional settings -->
-    <input type="hidden" name="_subject" value="New Contact Form Message">
-    <input type="hidden" name="_captcha" value="false">
+<!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <!-- Contact Form Section -->
+            <div class="contact-form-section">
+                <div class="contact-form-container">
+                    
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                            <label for="phone">Your Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
 
-    <div class="form-group">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <label for="name">Your Name</label>
-    </div>
-
-    <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <label for="email">Your Email</label>
-    </div>
-
-    <div class="form-group">
-        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-        <label for="phone">Your Phone Number</label>
-    </div>
-
-    <div class="form-group">
-        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-        <label for="message">Your Message</label>
-    </div>
-
-    <button type="submit" class="btn btn-primary submit-btn">
-        <span class="btn-text">Send Message</span>
-        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-    </button>
-</form>
+            
 
 
             <!-- Map Section -->
