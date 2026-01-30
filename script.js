@@ -220,14 +220,14 @@ if (contactForm) {
         
         try {
             // Send to Formspree (free backend service)
-            const response = await fetch('https://formspree.io/f/mjgrepal', {
+           const response = await fetch('https://formspree.io/f/mjgrepal', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify(formObject)
+});
 
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formObject)
-            });
             
             if (response.ok) {
                 // Success
